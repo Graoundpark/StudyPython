@@ -1,0 +1,1 @@
+String: {0}. Integer Number: {1}. Floating Number: {2}
