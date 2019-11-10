@@ -18,7 +18,12 @@ user3.name = "최지웅"
 user3.email = "jiwoong@codeit.kr"
 user3.password = "79453"
 
-# static 함수처럼 <클래스이름.메소드> 이런식으로 호출하는데,, 파이썬은 가능?
-User.say_hello(user1)
-User.say_hello(user2)
-User.say_hello(user3)
+# 인스턴스 메소드의 특별한 규칙
+User.say_hello(user1)   # 클래스에서 메소드를 호출
+user1.say_hello()       # 인스턴스의 메소드를 호출, user1의 인스턴스가 say_hello의 파라미터로 자동으로 들어감
+
+# 22, 23번 줄은 서로 같다.
+
+# 에러(파라미터가 1개인데 2개 받았다고 에러남)
+#User.say_hello(user1, user1)
+#user1.say_hello(user1)
